@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="display-1">Fmail</h1>
+    <div class="container">
+        <div class="row w-100">
+            
+         <!--1st column-->
+            <div id="--1st" class="col-sm-12 col-md-4 col-lg-3 col-1">
+                
+             <div class="dropdown">
+                    <button  @include color-mode(dark) { class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </button>
+                    <ul class="dropdown-menu">
+                       
+                        <button type="button" class="btn btn-outline-primary list-group-item active">Inbox</button>
+                        <button type="button" class="btn btn-outline-secondary list-group-item active">Sent</button>
+                        <button type="button" class="btn btn-outline-success list-group-item active">Draft</button>
+                        <button type="button" class="btn btn-outline-danger list-group-item active">Trash</button>
+                        <button type="button" class="btn btn-outline-warning list-group-item active">Chat</button>
+                     
+                    </ul>}
+                
+              
+
+            </div>
+            <button type="button" class="btn btn-outline-info">Compose</button>
+        </div>
+         <!--2nd column-->
+            <div class="col-sm-12 col-md-8 col-lg-3 col-2">
+           
+                <!--search bar-->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <!--1st email-->
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"> <strong>Bay Valley Tech</strong> </h5>
+                  <h6 class="card-subtitle mb-2 "> <strong>Email template rough draft</strong> </h6>
+                  <p class="card-text">  Email template rough draft will be due !</p>
+                </div>
+              </div>
+              <!--2nd email-->
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"> <strong>Bay Valley Tech</strong></h5>
+                  <h6 class="card-subtitle mb-2 "> <strong>Interniship</strong> </h6>
+                  <p class="card-text">Welcome Fezah to the bvt internship !!!</p>
+                </div>
+              </div>
+              <!--3rd email-->
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Fmail</strong> </h5>
+                  <h6 class="card-subtitle mb-2 "> <strong>Welcome email</strong> </h6>
+                  <p class="card-text">Thanks for signing up Fmail account !</p>
+                </div>
+              </div>
+            
+            </div>
+           
+         <!--3rd column-->
+            <div class="col-sm-12 col-md-12 col-lg-6 col-3">
+                <div class="circle"> <strong>Ed</strong></div>
+                <h1><strong>Bay Valley Tech</strong> </h1>
+                <h2>To: Fezah J.</h2>
+                <h3><strong>Important email to inform students about upcoming cohort</strong></h3>
+                <p>Hello Everyone!We will be launching Cohort 231 on
+                    Monday, January 23rd, 2023. Classes will be held
+                    Mondays and Wednesdays from 5:30pm - 7:30pm 
+                    on Discord.    </p>
+                
+                <!--reply box-->
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a reply here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">reply here ....</label>
+                  </div>
+                  <!--reply button-->
+                  <button type="button" class="btn btn-primary">reply</button>
+                   <!--sign out-->
+                <div class="form-floating">
+                    <label for="floatingTextarea2"></label>
+                  </div>
+                  <!--signout-->
+                  <button type="button" class="btn btn-primary">signout</button>
+                  
+
+
+      
+      
+            </div>
+        </div>
+    </div>
+    <!-- Include the Bootstrap JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
